@@ -1,0 +1,51 @@
+{
+  "name": "lesson-playwright-testing",
+  "version": "1.0.0",
+  "description": "Lessons for [Video course on playwright 🎭](http://youtube.com/user/basaratali)",
+  "main": "dist/main.js",
+  "scripts": {
+    "build:frontend": "webpack -p",
+    "serve:frontend": "webpack-dev-server -d",
+    "serve:backend": "ts-node src/webapp/backend/server.ts",
+    "start": "concurrently \"npm run serve:frontend\" \"npm run serve:backend\"",
+    "start:nosocket": "npm run build:frontend && npm run serve:backend -- 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basarat/playwright-playbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/basarat/playwright-playbook/issues"
+  },
+  "homepage": "https://github.com/basarat/playwright-playbook#readme",
+  "dependencies": {
+    "playwright": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.6",
+    "@types/express-fileupload": "1.1.3",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "concurrently": "5.2.0",
+    "eslint": "^7.7.0",
+    "express": "4.17.1",
+    "express-basic-auth": "1.2.0",
+    "express-fileupload": "1.1.6",
+    "gls": "3.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "ts-loader": "7.0.4",
+    "ts-node": "8.10.1",
+    "typescript": "3.8.3",
+    "typestyle": "2.1.0",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
+  }
+}
